@@ -1,0 +1,4 @@
+﻿  main.c
+C:\Users\radog\source\repos\Project1\Project1\main.c(84,54): warning C4133: функция: несовместимые типы - из "ID3D11Buffer *" в "ID3D11Resource *"
+C:\Users\radog\source\repos\Project1\Project1\main.c(91,10): warning C4013: D3DCompile: нет определения; предполагается "extern" с возвратом типа "int"
+  Project1.vcxproj -> C:\Users\radog\source\repos\Project1\x64\Debug\Project1.exe
