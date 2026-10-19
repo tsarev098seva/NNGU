@@ -1,0 +1,10 @@
+^C:\USERS\S26380012\NNGU\CMAKELISTS.TXT
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/s26380012/NNGU -BC:/Users/s26380012/NNGU/build --check-stamp-file C:/Users/s26380012/NNGU/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

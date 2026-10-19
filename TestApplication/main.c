@@ -198,10 +198,10 @@
 //	return 0;
 //}
 
-#include <stdio.h>
-#include <stdlib.h>
-
-int main() {
+//#include <stdio.h>
+//#include <stdlib.h>
+//
+//int main() {
 	/*int a = 0;
 	int* pa = &a;
 	scanf("%d", pa);
@@ -237,20 +237,50 @@ int main() {
 		printf("a[%d]\t=\t%lf\n", i, a);
 	}*/
 
-	int n = 0, i = 0, min = 1, max = 6;
-	printf("brosaet pervi\n");
-	int a1 = (((double)rand()) / (RAND_MAX)) * (max - min) + min;
-	int a2 = (((double)rand()) / (RAND_MAX)) * (max - min) + min;
-	printf("brosaet vtoroi\n");
-	int a3 = (((double)rand()) / (RAND_MAX)) * (max - min) + min;
-	int a4 = (((double)rand()) / (RAND_MAX)) * (max - min) + min;
-	if (a1 + a2 > a3 + a4)
-	{
-		printf("pobed perv");
+//	int n = 0, i = 0, min = 1, max = 6;
+//	printf("brosaet pervi\n");
+//	int a1 = (((double)rand()) / (RAND_MAX)) * (max - min) + min;
+//	int a2 = (((double)rand()) / (RAND_MAX)) * (max - min) + min;
+//	printf("brosaet vtoroi\n");
+//	int a3 = (((double)rand()) / (RAND_MAX)) * (max - min) + min;
+//	int a4 = (((double)rand()) / (RAND_MAX)) * (max - min) + min;
+//	if (a1 + a2 > a3 + a4)
+//	{
+//		printf("pobed perv");
+//	}
+//	else
+//	{
+//		printf("pobed vtor");
+//	}
+//	return 0;
+//}
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+int main() {
+	int max = 0, min = 0, ima = 0, imi = 0, s = 0;
+	int val = 0, i = 0, n;
+	int ocenki[10];
+	int* students = 0;
+	scanf("%d", &n);
+	val = rand() % 10 + 1;
+	students = (int*)malloc(n * sizeof(int));
+	for (i = 0;i < n;i++) {
+		val = rand() % 10 + 1;
+		printf("st[%d]\t= %d\n", i + 1, val);
+		students[i] = val;
+		ocenki[val];
+		if (val > max)
+		{
+			ima = i;
+			max = val;
+		}
+		if (val < min)
+		{
+			imi = i;
+			min = val;
+		}
+		s += val;
 	}
-	else
-	{
-		printf("pobed vtor");
-	}
-	return 0;
 }
